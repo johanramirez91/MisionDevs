@@ -3,19 +3,7 @@ Proyecto MisionTIC
 
 Se propone analizar, diseñar y construir una aplicación software que permita
 controlar las ventas físicas y virtuales de una empresa de manufactura y hacerles
-el correspondiente seguimiento con el siguiente Stack: 
-
-o React JS
-o HTML 5
-o CSS3
-o Lenguaje JavaScript
-o Lenguaje TypeScript
-o Node Js
-o Plataformas de desarrollo para Backend (Node JS)
-o Stack MERN
-o (OAuth2)
-o (Heroku)
-o (Git / GitHub)
+el correspondiente seguimiento con el siguiente Stack: React JS, HTML 5, CSS3, Lenguaje JavaScript, Lenguaje TypeScript, Node Js, Plataformas de desarrollo para Backend (Node JS), Stack MERN, (OAuth2), (Heroku), (Git / GitHub)
 
 ------------
 |  Rol | Nombre  |  Presentación |
