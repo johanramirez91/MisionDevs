@@ -1,283 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>DevSchool</title>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+  <link rel="icon" type="image/png" href="assets/Icon.png" sizes="32x32">
+  <title>DevSchool</title>
+  
+</head>
 
-  <body>
-    <nav class="navbar navbar-light bg-light p-3">
-      <div
-        class="
+<body>
+  <nav class="navbar navbar-light bg-light p-3">
+    <div class="
           d-flex
           col-12 col-md-3 col-lg-2
           mb-2 mb-lg-0
           flex-wrap flex-md-nowrap
-          justify-content-between
-        "
-      >
-        <a class="navbar-brand" href="#"> DevSchool </a>
-        <button
-          class="navbar-toggler d-md-none collapsed mb-3"
-          type="button"
-          data-toggle="collapse"
-          data-target="#sidebar"
-          aria-controls="sidebar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="col-12 col-md-4 col-lg-2">
-        <input
-          class="form-control form-control-dark"
-          type="text"
-          placeholder="Search"
-          aria-label="Search"
-        />
-      </div>
-      <div
-        class="
+          justify-content-between">
+      <a class="navbar-brand" href="#"> 
+        <img src="assets/logo.png" alt="logo" height="80px">
+      </a>
+      <button class="navbar-toggler d-md-none collapsed mb-3" type="button"      data-toggle="collapse" 
+        data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="col-12 col-md-4 col-lg-2">
+      <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search" />
+    </div>
+    <div class="
           col-12 col-md-5 col-lg-8
           d-flex
           align-items-center
           justify-content-md-end
           mt-3 mt-md-0
-        "
-      >
-        <div class="mr-3 mt-1">
-          <a
-            class="github-button"
-            href="https://github.com/johanramirez91/MisionDevs"
-            data-color-scheme="no-preference: dark; light: light; dark: light;"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            >Github project</a
-          >
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Menu
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Messages</a></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
-        </div>
+        ">
+      <div class="mr-3 mt-1">
+        <a class="github-button" href="https://github.com/johanramirez91/MisionDevs"
+          data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star" data-size="large"
+          data-show-count="true">Github project</a>
       </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <nav
-          id="sidebar"
-          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
-        >
-          <div class="position-sticky pt-md-5">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    class="bi bi-house-door"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
-                    />
-                  </svg>
-                  <span class="ml-2">Home</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    class="bi bi-box-seam"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
-                    />
-                  </svg>
-                  <span class="ml-2">Products</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-users"
-                  >
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                  </svg>
-                  <span class="ml-2">Customers</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    class="bi bi-cart3"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-                    />
-                  </svg>
-                  <span class="ml-2">Sales</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    class="bi bi-people"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
-                    />
-                  </svg>
-                  <span class="ml-2">Roles</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
-          <h1 class="h2">Dashboard</h1>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Overview
-              </li>
-            </ol>
-          </nav>
-          <p>Homepage admin interface</p>
-
-          <div class="card">
-            <h5 class="card-header">Customers</h5>
-            <div class="card-body">
-              <!-- Contenido Modulos -->
-            </div>
-          </div>
-
-          <div class="card">
-            <h5 class="card-header">Sales</h5>
-            <div class="card-body">
-              <!-- Modulos -->
-            </div>
-          </div>
-
-          <div class="card">
-            <h5 class="card-header">Products</h5>
-            <div class="card-body">
-              <!-- Modulos -->
-            </div>
-          </div>
-        </main>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Messages</a></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-md-5">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                </svg>
+                <span class="ml-2">Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-box-seam" viewBox="0 0 16 16">
+                  <path
+                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                </svg>
+                <span class="ml-2">Products</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-users">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span class="ml-2">Customers</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <span class="ml-2">Sales</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-people"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                </svg>
+                <span class="ml-2">Roles</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
+        <h1 class="h2">Dashboard</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Overview
+            </li>
+          </ol>
+        </nav>
+        <p>Homepage admin interface</p>
 
-  <!-- Footer Andres -->
-  <Footer>
-      <div class="footer-clean">
-          <footer>
-              <div class="container">
-                  <div class="row justify-content-center">
-                      <div class="col-sm-4 col-md-3 item">
-                          <h3>Servicios</h3>
-                          <ul>
-                              <li><a href="#">Aprende con DevSchool</a></li>
-                              <li><a href="#">Enseña con DevSchool</a></li>
-                              <li><a href="#">Preguntas frecuentes</a></li>
-                          </ul>
-                      </div>
-                      <div class="col-sm-4 col-md-3 item">
-                          <h3>Acerca de</h3>
-                          <ul>
-                              <li><a href="#">Nuestra historia</a></li>
-                              <li><a href="#">Equipo de trabajo</a></li>
-                              <li><a href="#">¿Quienes somos?</a></li>
-                          </ul>
-                      </div>
-                      <div class="col-sm-4 col-md-3 item">
-                          <h3>Jobs</h3>
-                          <ul>
-                              <li><a href="#">Empleos</a></li>
-                              <li><a href="#">Blog</a></li>
-                              <li><a href="#">Ayuda y asistencia</a></li>
-                          </ul>
-                      </div>
-                      <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                          <p class="copyright">DevSchool{_>} © 2021</p>
-                      </div>
-                  </div>
+        <div class="card">
+          <h5 class="card-header">Products</h5>
+          <div class="card-body">
+            <!-- Modulos -->
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-header">Customers</h5>
+          <div class="card-body">
+            <!-- Contenido Modulos -->
+            <h5 class="card-title">6</h5>
+            <p class="card-text">Sept 1 - Sept , Colombia</p>
+            <p class="card-text text-success">100% increase</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-header">Sales</h5>
+          <div class="col-12 col-xl-10 mb-4 mb-lg-0">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Order #</th>
+                      <th scope="col">Product</th>
+                      <th scope="col">Customer</th>
+                      <th scope="col">Total</th>
+                      <th scope="col">Date</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">17371705</th>
+                      <td>ReactJS</td>
+                      <td>santiago@gmail.com</td>
+                      <td>120.000 COP</td>
+                      <td>Sept 27 2021</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">17370540</th>
+                      <td>Javascript Fundamentals</td>
+                      <td>sara@hotmail.com</td>
+                      <td>80.000 COP</td>
+                      <td>Sept 28 2021</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">17371705</th>
+                      <td>Python for Data Science</td>
+                      <td>andres@gmail.com</td>
+                      <td>140.000 COP</td>
+                      <td>Sept 30 2021</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">17370540</th>
+                      <td>HTML/CSS begginer</td>
+                      <td>another@hotmail.com</td>
+                      <td>70.000 COP</td>
+                      <td>Sept 29 2021</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">17371705</th>
+                      <td>Java programming</td>
+                      <td>laura@gmail.com</td>
+                      <td>60.000 COP</td>
+                      <td>Sept 29 2021</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">17370540</th>
+                      <td>AI with python</td>
+                      <td>johanr@gmail.com</td>
+                      <td>100.000 COP</td>
+                      <td>Sept 28 2021</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-          </footer>
+              <a href="#" class="btn btn-block btn-light">View all</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <!-- Footer Andres -->
+    <footer>
+      <div class="footer-clean">
+        <footer>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Servicios</h3>
+                <ul>
+                  <li><a href="#">Learn</a></li>
+                  <li><a href="#">Teach</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                <h3>About</h3>
+                <ul>
+                  <li><a href="#">Our history</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Who we are</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Jobs</h3>
+                <ul>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 item social">
+                <a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                    class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                <p class="copyright">DevSchool{_>} © 2021</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  </Footer>
+    </footer>
+    </main>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>
