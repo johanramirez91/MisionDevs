@@ -17,6 +17,11 @@
 </head>
 
 <body>
+  <script>
+      function Alerta() {
+        alert("You made a successful modification")
+      }
+  </script>
   <nav class="navbar navbar-light bg-light p-3">
     <div class="
           d-flex
@@ -142,11 +147,89 @@
 
         <div class="card">
           <h5 class="card-header">Customers</h5>
+          <div class="col-12 col-xl-10 mb-4 mb-lg-0">
           <div class="card-body">
-            <!-- Contenido Modulos -->
-            <h5 class="card-title">6</h5>
-            <p class="card-text">Sept 1 - Sept , Colombia</p>
-            <p class="card-text text-success">100% increase</p>
+            <label for="Id Customer"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+            <input type="number" id="Id Customer" name="Id Customer" placeholder="Id Customer" />
+            <label for="nameC"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+            <input type="text" id="nameC" name="nameC" placeholder="Customer name" />
+            <label for="Document"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+            <input type="number" id="Document" name="Document" placeholder="Customer document"/>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id Customer</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Document</th>
+                    <th scope="col">Mail</th>
+                    <th scope="col">Products</th>
+                    <th scope="col">Status</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Johan Ramires</td>
+                    <td>15278613</td>
+                    <td>johanr@gmail.com</td>
+                    <td>ReactJS</td>
+                    <td>Activo</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Santiago M</td>
+                    <td>1527864</td>
+                    <td>santiago@gmail.com</td>
+                    <td>ReactJS</td>
+                    <td>Activo</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Sara M</td>
+                    <td>1633864</td>
+                    <td>sara@hotmail.com</td>
+                    <td>Javascript Fundamentals</td>
+                    <td>Activa</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Andres R</td>
+                    <td>1844864</td>
+                    <td>andres@gmail.com</td>
+                    <td>Python for Data Science</td>
+                    <td>Suspendido</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+            <a href="#" class="btn btn-block btn-light">View all</a>
           </div>
         </div>
 
@@ -154,6 +237,12 @@
           <h5 class="card-header">Sales</h5>
           <div class="col-12 col-xl-10 mb-4 mb-lg-0">
             <div class="card-body">
+              <label for="Order"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+              <input type="number" id="Order" name="Order" placeholder="Order" />
+              <label for="Document"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+              <input type="number" id="Document" name="Document" placeholder="Customer document"/>
+              <label for="Mail"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+              <input type="text" id="Mail" name="Mail" placeholder="Customer email" />
               <div class="table-responsive">
                 <table class="table">
                   <thead>
@@ -168,6 +257,22 @@
                   </thead>
                   <tbody>
                     <tr>
+                      <th scope="row">17370540</th>
+                      <td>AI with python</td>
+                      <td>johanr@gmail.com</td>
+                      <td>120.000 COP</td>
+                      <td>Sept 28 2021</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <th scope="row">17371705</th>
                       <td>ReactJS</td>
                       <td>santiago@gmail.com</td>
@@ -175,6 +280,12 @@
                       <td>Sept 27 2021</td>
                       <td>
                         <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
                       </td>
                     </tr>
                     <tr>
@@ -186,6 +297,12 @@
                       <td>
                         <a href="#" class="btn btn-sm btn-primary">View</a>
                       </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">17371705</th>
@@ -195,6 +312,12 @@
                       <td>Sept 30 2021</td>
                       <td>
                         <a href="#" class="btn btn-sm btn-primary">View</a>
+                      </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
                       </td>
                     </tr>
                     <tr>
@@ -206,6 +329,12 @@
                       <td>
                         <a href="#" class="btn btn-sm btn-primary">View</a>
                       </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">17371705</th>
@@ -216,17 +345,14 @@
                       <td>
                         <a href="#" class="btn btn-sm btn-primary">View</a>
                       </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">17370540</th>
-                      <td>AI with python</td>
-                      <td>johanr@gmail.com</td>
-                      <td>100.000 COP</td>
-                      <td>Sept 28 2021</td>
-                      <td>
-                        <a href="#" class="btn btn-sm btn-primary">View</a>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
                       </td>
                     </tr>
+                    
                   </tbody>
                 </table>
               </div>
@@ -234,7 +360,93 @@
             </div>
           </div>
         </div>
-
+        <div class="card">
+          <h5 class="card-header">Rol</h5>
+          <div class="col-12 col-xl-10 mb-4 mb-lg-0">
+          <div class="card-body">
+            <label for="Id User"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+            <input type="number" id="Id Customer" name="Id Customer" placeholder="Id User" />
+            <label for="nameU"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+            <input type="text" id="nameU" name="nameU" placeholder="User name" />
+            <label for="DocumentU"><a href="#" class="btn btn-sm btn-primary">Search</a></label>
+            <input type="number" id="DocumentU" name="DocumentU" placeholder="User document"/>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id User</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Document</th>
+                    <th scope="col">Mail</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Status</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">01</th>
+                    <td>Carlos S</td>
+                    <td>123245125</td>
+                    <td>Cralosr07@gmail.com</td>
+                    <td>Administrador</td>
+                    <td>Activo</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">Modificar</a>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">02</th>
+                    <td>Eduardo M</td>
+                    <td>152120514</td>
+                    <td>Eduardoñl@gmail.com</td>
+                    <td>Vendedor</td>
+                    <td>Activo</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">03</th>
+                    <td>Maria C</td>
+                    <td>587151563</td>
+                    <td>MrariaC@hotmail.com</td>
+                    <td>Vendedora</td>
+                    <td>Activa</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary">Actualizar</a>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1)" >Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Pablo O</td>
+                    <td>184456864</td>
+                    <td>PablRs@gmail.com</td>
+                    <td>Vendedor</td>
+                    <td>Inactivo</td>
+                      <td>
+                        <a onclick="Alerta()" class="btn btn-sm btn-primary" style="color: white;">Actualizar</a>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-primary"  style="background-color:rgba(255, 0, 0, 0.658); border-color:rgb(63, 1, 1); " >Eliminar</a>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+            <a href="#" class="btn btn-block btn-light">View all</a>
+          </div>
+        </div>
     </div>
     <!-- Footer Andres -->
     <footer>
