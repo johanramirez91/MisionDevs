@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Login Firebase</title>
+
+  <!-- Libreria  Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+  <!-- Productos Firebase a usar -->
+  <!-- Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+  <!-- Firebase Auth -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand"
+         href="#"><img src="assets\Logo.png" height="50px"></a> 
+    </div>
+  </nav>
+
+  <main class="container mt-3">
+    
+    <div class="row">
+      <div class="offset-3 col-6">
+        <div class="mb-3 row">
+          <label class="col-sm-5 col-form-label">Username</label>
+          <div class="col-sm-8">
+            <input type="text"
+                   class="form-control"
+                   id="email">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword"
+                 class="col-sm-5 col-form-label">Password</label>
+          <div class="col-sm-8">
+            <input type="password"
+                   class="form-control"
+                   id="password">
+                   <div class="mb-3 row"></div>
+                  <label><input type="checkbox" id="cbox1" value="first_checkbox"> Remember me</label><br>
+
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" style="background-color: white; border-color: black; color: black"
+                  id="btn-loginG"
+                  class="btn btn-primary mb-3">Enter with google</button>
+                  <div class="col-auto">
+                    <button type="submit"
+                            id="btn-login"
+                            class="btn btn-primary mb-3">Send</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script>
+
+    // Configuracion Firebase
+    var firebaseConfig = {
+      apiKey: "",
+      authDomain: "",
+      projectId: "",
+      storageBucket: "",
+      messagingSenderId: "",
+      appId: ""
+    };
+    // Inicializar Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const googleProvider = new firebase.auth.GoogleAuthProvider();
+    auth.languageCode = "es";
+
+
+    // Login con un proveedor
+    async function loginProvider(provider) {
+      const response = await auth.signInWithPopup(provider)
+      console.log(response);
+    }
+
+    // loginProvider(googleProvider);
+
+    //  Crear usuario email y pass
+    async function createWithEmailAndPassword(email, password) {
+      try {
+        const response = await auth.createUserWithEmailAndPassword(email, password);
+        var user = firebase.auth().currentUser;
+        console.log(user);
+        console.log(response.user.email);
+      } catch (error) {
+        throw new Error(error)
+      }
+    }
+    createWithEmailAndPassword('prueba@email.com', '123456')
+
+
+    // Login usuario email y pass
+    async function signInWithEmailAndPassword(email, password) {
+      try {
+        const response = await auth.signInWithEmailAndPassword(email, password);
+        const user = firebase.auth().currentUser;
+        console.log(user);
+        console.log(response.user.email);
+        actualStatusAuth()
+      } catch (error) {
+        throw new Error(error)
+      }
+    }
+
+    // signInWithEmailAndPassword('prueba@email.com', '123456')
+
+    // Salir
+    function logOut() {
+      auth.signOut()
+    }
+
+    function actualStatusAuth() {
+      auth.onAuthStateChanged(user => {
+        console.log(user);
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>
